@@ -114,6 +114,53 @@ public class Ex3 {
         System.out.println();
         System.out.println("Calcule o produto dos inteiros de 1 a 100 e escreva o resultado");
         System.out.println("Usando FOR");
+        double produtorio = 1;
+        for (i = 1; i <= 100; i++) {
+            produtorio = produtorio * i;
+        }
+        System.out.println("Produtorio = " + produtorio);
+        System.out.println("Usando WHILE");
+        produtorio = 1;
+        i = 1;
+        while (i <= 100) {
+            produtorio = produtorio * i;
+            i++;
+        }
+        System.out.println("Produtorio = " + produtorio);
+        System.out.println("Usando DO WHILE");
+        produtorio = 1;
+        i = 1;
+        do {
 
+            produtorio = produtorio * i;
+            i++;
+        } while (i <= 100);
+        System.out.println("Produtorio = " + produtorio);
+        System.out.println();
+        System.out.println("C5 - Calcule o somatório dos inteiros impares de 1 a 100 e escreva o resultado");
+        System.out.println("Usando FOR");
+        soma3 = 0;
+        for (i = 1; i <= 100; i+=2) {
+            soma3 = soma3 + i;
+        }
+        System.out.println("Soma = " + soma3);
+        System.out.println("Usando WHILE");
+        soma3 = 0;
+        i = 1;
+        while (i <= 100) {
+            soma3 = soma3 + i;
+            i+=2;
+        }
+        System.out.println("Soma = " + soma3);
+        System.out.println("Usando DO WHILE");
+        soma3 = 0;
+        i = 1;
+        do {
+
+            soma3 = soma3 + i;
+            i+=2;
+        } while (i <= 100);
+        System.out.println("Soma = " + soma3);
+        System.out.println();
     }
 }
