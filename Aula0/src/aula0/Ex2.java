@@ -9,13 +9,10 @@ package aula0;
  *
  * @author dlavareda
  */
-public class Aula0 {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Ex2 {
     public static void main(String[] args) {
-        System.out.println("Este é o meu 1º programa em Java");
+        System.out.println("1º aula de POO");
+        System.out.println();
+        System.out.println("Estudo da instrução de escrita");
     }
-
 }
