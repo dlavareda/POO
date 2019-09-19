@@ -140,7 +140,7 @@ public class Ex3 {
         System.out.println("C5 - Calcule o somatório dos inteiros impares de 1 a 100 e escreva o resultado");
         System.out.println("Usando FOR");
         soma3 = 0;
-        for (i = 1; i <= 100; i+=2) {
+        for (i = 1; i <= 100; i += 2) {
             soma3 = soma3 + i;
         }
         System.out.println("Soma = " + soma3);
@@ -149,7 +149,7 @@ public class Ex3 {
         i = 1;
         while (i <= 100) {
             soma3 = soma3 + i;
-            i+=2;
+            i += 2;
         }
         System.out.println("Soma = " + soma3);
         System.out.println("Usando DO WHILE");
@@ -158,7 +158,7 @@ public class Ex3 {
         do {
 
             soma3 = soma3 + i;
-            i+=2;
+            i += 2;
         } while (i <= 100);
         System.out.println("Soma = " + soma3);
         System.out.println();
