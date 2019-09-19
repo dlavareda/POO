@@ -15,7 +15,10 @@ public class Aula0 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("HEllo");
+        for (int i = 0; i < 10; i++) {
+         System.out.println("Hello World");   
+        }
+        
     }
     
 }
