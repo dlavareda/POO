@@ -11,7 +11,7 @@ package aula1;
  */
 public class Exercicio6 {
 
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
         int numero;
         int p[] = new int[2];
         Double decNum, rD;
@@ -40,7 +40,7 @@ public class Exercicio6 {
         System.out.println("rF: " + rF);
         rD = x * y / p[1];
         System.out.println("rD: " + rD);
-        rF = 0 / 0;
+        //rF = 0 / 0;
         System.out.println("rF: " + rF);
         rF = sht + b * y * x * lng;
         System.out.println("rF: " + rF);
