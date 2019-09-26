@@ -31,25 +31,25 @@ public class Aula1 {
         result = a % b;
         System.out.println(a + " % " + b + " = " + result);
         //a++
-        System.out.println("a++ = " + ++a);   
-        System.out.println("a-- = " + --a);   
+        System.out.println("a++ = " + ++a);
+        System.out.println("a-- = " + --a);
         a += b;
-        System.out.println("a += b = " + a);   
+        System.out.println("a += b = " + a);
         a = 10;
         a -= b;
         System.out.println("a += b = " + a);
         a = 10;
         a -= b;
-        System.out.println("a -= b = " + a);  
+        System.out.println("a -= b = " + a);
         a = 10;
         a *= b;
-        System.out.println("a *= b = " + a);  
+        System.out.println("a *= b = " + a);
         a = 10;
         a /= b;
-        System.out.println("a /= b = " + a); 
+        System.out.println("a /= b = " + a);
         a = 10;
         a %= b;
-        System.out.println("a %= b = " + a);  
+        System.out.println("a %= b = " + a);
     }
-    
+
 }
