@@ -9,7 +9,12 @@ package myinputs;
  *
  * @author dlavareda
  */
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.temporal.TemporalAdjusters;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 public class Tempo {
 
@@ -81,10 +86,20 @@ public class Tempo {
         System.out.println(horas + ":" + minutos + ":" + segundos);
         System.out.println(dia + "/" + mes + "/" + ano);
         System.out.println(dia + " de " + nomemes[mes] + " de " + ano);
-        System.out.println(dia + " de " + nomemes[mes] + " de " + ano);
-        
-        
-        System.out.println("Faltam "+ (5-diasemana) + " dia para o fim se semana");
+
+        System.out.println("Faltam " + (5 - diasemana) + " dia para o fim se semana");
+
+        LocalDate dt = LocalDate.now();
+        int count = 0;
+        while (count < 13) {
+            dt = dt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY));
+
+            if (dt.getDayOfMonth() == 13) {
+                System.out.println("\nSexta-Feira 13: " + dt);
+                count++;
+            }
+        }
+
     }
 }
 
