@@ -8,18 +8,14 @@ package aula4;
 /**
  *
  * @author dlavareda
- * 
  */
-public class Aula4 {
+public class TesteAluno {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        
+
+        Aluno a1 = new Aluno("Diogo");
+        System.out.println(a1.toString());
+
     }
- 
-    
-   
-    
+
 }

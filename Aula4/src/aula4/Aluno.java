@@ -22,6 +22,7 @@ public class Aluno {
         this.nome = nome;
         lista = new Disciplina[5];
         for (int i = 0; i < 5; i++) {
+            lista[i] = new Disciplina();
             lista[i].setNome("");
             lista[i].setCodigo(0);
         }
