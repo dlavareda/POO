@@ -34,19 +34,19 @@ public class testAutocarro {
                     inspecao.inserir(numero);
                     break;
                 case 2:
-                    inspecao.retirar(numero);
+                    inspecao.retirar();
                     oficina.inserir(numero);
                     break;
                 case 3:
-                    oficina.retirar(numero);
+                    oficina.retirar();
                     pronto.inserir(numero);
                     break;
                 case 4:
-                    inspecao.retirar(numero);
+                    inspecao.retirar();
                     pronto.inserir(numero);
                     break;
                 case 5:
-                    pronto.retirar(numero);
+                    pronto.retirar();
                     break;
             }
             

@@ -102,14 +102,3 @@ public class Tempo {
 
     }
 }
-
-
-/*
-*i) Apresente as horas de um modo gramaticalmente correto (1 hora, 1 minuto! Passam, faltam! Horas
-exactas?)
-*ii) Refaça o exercício anterior usando o operador ternário.
-*iii) Apresente também a data.
-*iv) Refaça o exercício anterior mostrando o mês por extenso.
-v) Indique o número de dias que faltam até ao fim-de-semana...
-vi) Apresente a listagem das datas das 13 próximas Sextas-feiras 13.
- */
