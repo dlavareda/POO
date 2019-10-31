@@ -31,19 +31,22 @@ public class Biblioteca {
     }
 
     public void setLivros(ArrayList<String> L) {
-        for (int i = 0; i < L.size(); i++) {
+        livros = (ArrayList<String>) L.clone();
+
+        /* for (int i = 0; i < L.size(); i++) {
             livros.add(L.get(i));
-        }
+        }*/
     }
 
-    /*  public boolean equals(Object obj) {
+    public boolean equals(Biblioteca obj) {
         if (obj != null && this.getClass() == obj.getClass()) {
-            nome x = (nome) obj;
-            return (this.conta =  = x.conta);
-        } else {
-            return false;
+            if (this.nome.compareTo(obj.nome) == 0 && this.livros.equals(obj.livros)) {
+                return (true);
+            }
         }
-    }*/
+        return false;
+    }
+
     public String toString() {
         String s = "Nome: " + nome;
         for (int i = 0; i < livros.size(); i++) {

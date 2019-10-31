@@ -47,4 +47,20 @@ public class Telefone {
         String s = "Tipo: " + tipo + " Número: " + numero;
         return s;
     }
+
+    public boolean equals(Object obj) {
+        if (obj != null && this.getClass() == obj.getClass()) {
+            Telefone tel = (Telefone) obj;
+            return (this.numero == tel.numero && this.tipo.equals(tel.tipo));
+        } else {
+            return false;
+        }
+    }
+
+    public Object clone() {
+        Telefone copia = new Telefone();
+        copia.numero = this.numero;
+        copia.tipo = this.tipo;
+        return copia;
+    }
 }

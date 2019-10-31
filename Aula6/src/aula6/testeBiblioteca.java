@@ -15,8 +15,9 @@ public class testeBiblioteca {
 
     public static void main(String[] args) {
         Biblioteca B1 = new Biblioteca();
+        Biblioteca B2 = new Biblioteca();
         B1.setNome("Biblioteca da UBI");
-
+        
         ArrayList<String> L = new ArrayList<String>();
         L.add("Dicionario");
         L.add("Gramática");
@@ -44,6 +45,11 @@ public class testeBiblioteca {
         B1.removerLivro("Gramática");
         System.out.println("\n");
         System.out.println(B1.toString());
-
+        System.out.println("\n");
+        System.out.println("B1 equals B1??");
+        System.out.println(B1.equals(B1));
+        System.out.println("\n");
+        System.out.println("B1 equals B2??");
+        System.out.println(B1.equals(B2));
     }
 }
