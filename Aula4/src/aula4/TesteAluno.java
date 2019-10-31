@@ -15,7 +15,6 @@ public class TesteAluno {
 
         Aluno a1 = new Aluno("Diogo");
         System.out.println(a1.toString());
-
     }
 
 }

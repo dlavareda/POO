@@ -22,5 +22,6 @@ public class Teste {
         System.out.println(s.substring(4));
         System.out.println(s.compareTo("COVILHÃ")); //TRUE 
         System.out.println(s.compareTo("BlaBla")); //FALSE
+
     }
 }

@@ -13,13 +13,14 @@ import java.util.ArrayList; // import the ArrayList class
  */
 public class Biblioteca {
 
-    String nome;
-    String email;
-    ArrayList<Livro> livros = new ArrayList<Livro>(); // Create an ArrayList object
+    private String nome;
+    private String email;
+    private ArrayList<Livro> livros;// Create an ArrayList object
 
     public Biblioteca() {
         nome = "";
         email = "";
+        livros = new ArrayList<Livro>();
     }
 
     public void setNome(String nome) {
