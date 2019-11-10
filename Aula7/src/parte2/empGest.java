@@ -10,6 +10,11 @@ Deverá ter as opções:
  */
 package parte2;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import myinputs.Ler;
 
@@ -22,6 +27,15 @@ public class empGest {
     public static void main(String[] args) {
         int r;
         ArrayList<Empregado> empregados = new ArrayList<Empregado>();
+        //Carrega os dados do ficheiro
+        try {
+            ObjectInputStream is = new ObjectInputStream(new FileInputStream("/home/dlavareda/Documents/UBI/2019-2020/POO/POO/Aula7/empregadosDB.dat"));
+            empregados = (ArrayList) is.readObject();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        } catch (ClassNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
 
         do {
             System.out.println("1 – Criar empregado");
@@ -70,6 +84,15 @@ public class empGest {
             }
 
         } while (r != 5);
+        //grava o ArrayList no ficheiro antes de sair
+        try {
+            ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("/home/dlavareda/Documents/UBI/2019-2020/POO/POO/Aula7/empregadosDB.dat"));
+            // escrever o objeto lista no ficheiro
+            os.writeObject(empregados);
+            os.flush();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 }

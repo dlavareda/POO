@@ -10,11 +10,13 @@ Empregado
  */
 package parte2;
 
+import java.io.Serializable;
+
 /**
  *
  * @author dlavareda
  */
-public class Empregado {
+public class Empregado implements Serializable {
 
     private int NSS;
     private String nome;
