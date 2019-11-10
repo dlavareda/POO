@@ -16,22 +16,22 @@ package parte2;
  */
 public class Empregado {
 
-    private double NSS;
+    private int NSS;
     private String nome;
     private double salario;
 
-    public Empregado(double NSS, String nome) {
+    public Empregado(int NSS, String nome) {
         this.NSS = NSS;
         this.nome = nome;
     }
 
-    public Empregado(double NSS, String nome, double salario) {
+    public Empregado(int NSS, String nome, double salario) {
         this.NSS = NSS;
         this.nome = nome;
         this.salario = salario;
     }
 
-    public void setNSS(double NSS) {
+    public void setNSS(int NSS) {
         this.NSS = NSS;
     }
 
@@ -55,7 +55,7 @@ public class Empregado {
         return salario;
     }
 
-    public void subirSalario(double percent) {
+    public void subirSalario(int percent) {
         salario = salario + salario * (percent / 100);
     }
 

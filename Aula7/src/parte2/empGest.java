@@ -33,7 +33,7 @@ public class empGest {
             switch (r) {
                 case 1:
                     System.out.println("Introduza o NSS");
-                    double nss = Ler.umDouble();
+                    int nss = Ler.umInt();
                     System.out.println("Introduza o Nome");
                     String nome = Ler.umaString();
                     System.out.println("Introduza o Salario");
@@ -48,10 +48,24 @@ public class empGest {
                     break;
                 case 3:
                     System.out.println("Qual o NSS do Empregado a modificar?");
-                    
+                    int editar = Ler.umInt();
+                    for (int i = 0; i < empregados.size(); i++) {
+                        if (empregados.get(i).getNSS() == editar) {
+                            System.out.println("Introduza o novo nome");
+                            empregados.get(i).setNome(Ler.umaString());
+                            System.out.println("Introduza o novo salário");
+                            empregados.get(i).setSalario(Ler.umDouble());
+                        }
+                    }
                     break;
                 case 4:
-                    
+                    System.out.println("Qual o NSS do Empregado a apagar?");
+                    int apagar = Ler.umInt();
+                    for (int i = 0; i < empregados.size(); i++) {
+                        if (empregados.get(i).getNSS() == apagar) {
+                            empregados.remove(i);
+                        }
+                    }
                     break;
             }
 
