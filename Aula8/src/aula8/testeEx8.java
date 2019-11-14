@@ -19,7 +19,8 @@ public class testeEx8 {
     public int numeroAlunosLicenciatura() {
         int count = 0;
         for (int i = 0; i < A.size(); i++) {
-            if (A.getClass().toString() == "AlunoLicenciatura") {
+            if (A.get(i). == "AlunoLicenciatura") {// not Done YEt
+          
                 count++;
             }
         }
