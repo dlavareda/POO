@@ -20,7 +20,7 @@ public class Estatisticas {
         }
         return count;
     }
-
+    
     // numero de vezes que o cliente vai ao cinema
     public static int numVezesClienteCinema(Clientes cliente) {
         int count = 0;
